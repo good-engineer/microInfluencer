@@ -21,6 +21,9 @@ public class InfluenceCalculator implements Calculator {
 		for (Post p:postList) {
 			total+=calculatePostEngagment(p);
 		}
+		if (postList.isEmpty()) {
+			return 0;
+		}
 		return total/postList.size();
 	}
 	public long calculatePostEngagment(Post p) {
