@@ -10,8 +10,10 @@ import java.util.ArrayList;
  *
  */
 public interface Calculator {
-	public long calculateInfluenceValue(User u);
-	public long calculateTotalEngagment(ArrayList<Post> postList);
-	public long calculatePostEngagment(Post p);
+	public long calculateLikeCountValue(User u);
+	public double calculateFollowerValue(User u) ;
+	public double calculateCaptionLengthValue(User u) ;
+	public double calculateTagCountValue(User u) ; 
+	public long calculateTotalEngagment(User u);
 	
 }
